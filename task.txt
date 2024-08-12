@@ -1,0 +1,23 @@
+1.      Repetition of room number in ‘All booking’ page, need to be cut down to only 1. //done
+
+2.      Cross checking of CDC no with name so that same CDC no. is not entered for more than one person. To avoid fraudulent use of CDC. //done in recep, new user not found
+
+3.      To reduce / extend the number of booking days there should be an easy way. //Pending
+
+4.      Cancellation of booking within the booking date (same day)- option required but record should not be deleted for audit purpose.//option given, to make another filter
+
+5.      Room changes option- Presently if a person shifts to a different room, the earlier booking need to be closed and a fresh booking to be made. For the fresh booking let there be an option where all personal data may be retrieved rather than filling up again.
+
+6.      For same person checking in after a gap of many days- All personal data should be retrievable.
+
+7.      Receptionist should be able to see his own expense report for that particular shift. A summary of all cash & online activity should be available to handover to the receptionist.
+
+8.      Admin should be able to check expense report based on filter- Receptionist & date wise.
+
+9.      Admin should be able to take print out of expense report every month for
+
+A)     Money received / credit.
+
+B)     Money paid / debit.
+
+10.   Request to change the present booking no- NGS20240718000012 to NGS24078000012

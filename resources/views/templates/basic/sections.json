@@ -1,0 +1,280 @@
+{
+    "banner": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Banner Section",
+        "content": {
+            "heading": "text",
+            "images": {
+                "banner_image": {
+                    "size": "1800x800"
+                },
+                "breadcrumb_image": {
+                    "size": "1900x300"
+                }
+            }
+        }
+    },
+    "about": {
+        "builder": true,
+        "name": "About Us",
+        "content": {
+            "images": {
+                "image_1": {
+                    "size": "250x260"
+                },
+                "image_2": {
+                    "size": "250x260"
+                },
+                "image_3": {
+                    "size": "250x260"
+                },
+                "image_4": {
+                    "size": "250x260"
+                }
+            },
+            "heading": "text",
+            "subheading": "text",
+            "description": "textarea-nic"
+        }
+    },
+    "about_academy": {
+        "builder": true,
+        "name": "About Maritime Aca",
+        "content": {
+            "images": {
+                "image_1": {
+                    "size": "250x260"
+                },
+                "image_2": {
+                    "size": "250x260"
+                },
+                "image_3": {
+                    "size": "250x260"
+                },
+                "image_4": {
+                    "size": "250x260"
+                }
+            },
+            "heading": "text",
+            "subheading": "text",
+            "name_1": "text",
+            "title_1": "text",
+            "short_description_1": "text",
+            "name_2": "text",
+            "title_2": "text",
+            "short_description_2": "text",
+            "description": "textarea-nic"
+        }
+    },
+    "service": {
+        "builder": true,
+        "name": "Service Section",
+        "content": {
+            "images": {
+                "video_thumb": {
+                    "size": "615x630"
+                }
+            },
+            "heading": "text",
+            "subheading": "text",
+            "video_url": "text"
+        },
+        "element": {
+            "name": "text",
+            "icon": "icon",
+            "modal": true
+        }
+    },
+    "testimonial": {
+        "builder": true,
+        "name": "Testimonial Section",
+        "content": {
+            "images": {
+                "background_image": {
+                    "size": "1800x900"
+                }
+            },
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "images": {
+                "image": {
+                    "size": "150x150"
+                }
+            },
+            "name": "text",
+            "designation": "text",
+            "feedback": "textarea",
+            "modal": false
+        }
+    },
+    "policy_pages": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Policy Pages",
+        "element": {
+            "title": "text",
+            "details": "textarea-nic",
+            "modal": false
+        }
+    },
+    "faq": {
+        "builder": true,
+        "name": "FAQ Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text",
+            "button_text": "text",
+            "button_url": "text"
+        },
+        "element": {
+            "question": "text",
+            "answer": "textarea",
+            "modal": true
+        }
+    },
+    "blog": {
+        "builder": true,
+        "name": "Blog Section",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        },
+        "element": {
+            "images": {
+                "image": {
+                    "size": "1000x700",
+                    "thumb": "400x280"
+                }
+            },
+            "title": "text",
+            "description": "textarea-nic",
+            "modal": false
+        }
+    },
+    "subscribe": {
+        "builder": true,
+        "name": "Subscribe Section",
+        "content": {
+            "images": {
+                "image": {
+                    "size": "1800x300"
+                }
+            },
+            "heading": "text",
+            "button_title": "text"
+        }
+    },
+    "social_icon": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Social Icons",
+        "element": {
+            "title": "text",
+            "social_icon": "icon",
+            "url": "text",
+            "modal": true
+        }
+    },
+    "contact_us": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Contact Us",
+        "content": {
+            "images": {
+                "image": {
+                    "size": "900x1020"
+                }
+            },
+            "title": "text",
+            "short_details": "text",
+            "email_address": "text",
+            "contact_number": "text",
+            "latitude": "text",
+            "longitude": "text",
+            "address": "text"
+        }
+    },
+    "login": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Login Page",
+        "content": {
+            "images": {
+                "image": {
+                    "size": "1037x890"
+                }
+            },
+            "title": "text",
+            "short_details": "textarea",
+            "form_heading": "text",
+            "form_subheading": "text"
+        }
+    },
+    "register": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Registration Page",
+        "content": {
+            "images": {
+                "image": {
+                    "size": "1037x890"
+                }
+            },
+            "title": "text",
+            "short_details": "textarea",
+            "form_heading": "text",
+            "form_subheading": "text"
+        }
+    },
+    "account_recovery": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Account Recovery",
+        "content": {
+            "description": "text"
+        }
+    },
+    "code_verify": {
+        "builder": false,
+        "no_selection": true,
+        "name": "Code Verify Page"
+    },
+    "footer": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Footer Section",
+        "content": {
+            "images": {
+                "image": {
+                    "size": "1800x600"
+                }
+            },
+            "description": "textarea"
+        }
+    },
+    "featured_room": {
+        "builder": true,
+        "no_selection": false,
+        "name": "Featured Rooms",
+        "content": {
+            "heading": "text",
+            "subheading": "text"
+        }
+    },
+    "banned_page": {
+        "builder": true,
+        "no_selection": true,
+        "name": "Banned Page",
+        "content": {
+            "images": {
+                "image": {
+                    "size": "370x360"
+                }
+            },
+            "heading": "text"
+        }
+    }
+}

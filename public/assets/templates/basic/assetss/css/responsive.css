@@ -1,0 +1,227 @@
+@media all and (max-width:992px) {
+    .header-item-right {
+  right: -180px;
+  position: absolute;
+  top: -60px;
+}
+.header .menu-mobile-trigger span {
+background:#004f80 !important;
+}
+.carousel-caption {
+  bottom: 30px !important;
+  left: 10% !important;
+right: 10% !important;
+}
+.carousel-caption h1 {
+	font-size:30px;
+	line-height:30px;
+}
+.carousel-caption h2 {
+	font-size:16px;
+	line-height:18px;
+}
+.header .menu > ul > li .menu-subs.menu-mega {
+  height: 60% !important;
+}
+.header-phone {
+	display:none;
+}
+.header {
+	background: #000 !important;
+}
+.header .menu {
+  height: 1000px !important;
+}
+.overlay {
+  height: 1000px !important;
+}
+#banner-slider {
+  margin-top: 0;
+}
+    .menu {
+  text-align: left;
+  display: inherit;
+}
+.header .menu > ul > li > a {
+  color: #000 !important;
+}
+.header .menu>ul>li .menu-subs.menu-mega.menu-column-1 {
+	left:0%;
+}
+.carousel-item {
+  min-height: 160px;
+  height: 16vh;
+}
+#welcome-section {
+	text-align:center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.section-header {
+  font-size: 50px;
+  line-height:50px;
+}
+h2 {
+	font-size: 30px;
+	line-height:30px;
+}
+#welcome-section img {
+	padding-top:30px;
+}
+#offer-section h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.section-caption {
+	font-size: 10px;
+	letter-spacing:2px;
+	margin-top: -45px;
+}
+#videoMessage {
+  top: 0px;
+  padding: 0 20px;
+}
+.header img {
+	width:30px;
+}
+.banner-item img {
+  height: 130px;
+}
+#innerPG-banner {
+  margin-top: 0;
+}
+#offer-section .rm-btn-trd {
+	margin-top:0px !important;
+	padding:6px 30px !important;
+	font-size:10px;
+}
+#sustain-section {
+  padding-top: 30px;
+}
+#videoDiv {
+  height: auto;
+}
+.sus-ctn-box-right {
+  padding: 20px;
+  text-align: center;
+}
+.sus-ctn-box-right .wel-list {
+	text-align:left;
+}
+ul.breadcrumb li {
+  font-size: 9px;
+}
+.sidebar {
+	margin-bottom:30px;
+}
+.inner_about_text {
+  position: inherit;
+  padding: 30px 20px;
+  text-align: center;
+}
+.our_vision_panel::after {
+	width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.vision_text-snd {
+  position: relative;
+  padding: 20px;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.our_vision {
+  height: auto;
+  margin-top: 30px;
+}
+.our_vision_panel, .inn-pro-area {
+-moz-box-align: start;
+    -moz-box-orient: vertical;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.mv-box-img, .inn-pro-ctn-box {
+-moz-box-ordinal-group: 2;
+    order: 2;
+}
+.mv-box-ctn, .inn-pro-img-box {
+-moz-box-ordinal-group: 1;
+    order: 1;
+}
+.vision_text {
+  padding: 30px 20px;
+  right: 0;
+  top: 0px;
+  text-align: center;
+}
+.vision_text-snd {
+	text-align:left;
+}
+.cd-horizontal-timeline {
+  margin: 0;
+}
+.cd-horizontal-timeline .events-content h2 {
+  font-size: 1.5em !important;
+}
+.cd-horizontal-timeline .events-content p {
+  font-size: 1em !important;
+}
+.mif-tab-area .nav-pills .nav-link {
+    margin: 0 0 10px 0;
+  width: 100%;
+}
+.mif-tab-area h4 {
+	margin-top:20px;
+}
+.inn-pro-area .rm-btn-snd {
+	margin-bottom:30px;
+}
+.inn-pro-ctn-box h4 {
+	margin-top:20px;
+}
+.senc-box {
+	margin-bottom:30px;
+	text-align:center;
+}
+.report_panel_left .pdf_icon {
+  right: 0px;
+}
+.report_right_panel {
+	text-align:center;
+}
+.report_right_panel h1 {
+  padding: 40px 20px 0px 20px;
+}
+.report_pdf_panel li {
+  width: auto;
+}
+.report_pdf_panel li a {
+	font-size:12px;
+}
+#hmbottom-section img {
+	width:100%;
+	margin-right:0;
+}
+.border-r-box img {
+	width:auto !important;
+	margin:0 auto !important;
+}
+.border-r-box {
+  padding: 40px 0 20px 0;
+}
+
+}
+@media (min-width: 993px) and (max-width:1190px) {
+.header .menu > ul > li > a {
+  font-size: 10px !important;
+}
+.header-phone .media-body a {
+  font-size: 14px;
+}
+.header .menu > ul > li {
+  margin-left: 1rem !important;
+}
+
+}

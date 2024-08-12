@@ -1,0 +1,171 @@
+@extends('admin.layouts.app')
+
+@section('panel')
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card b-radius--10">
+            <div class="card-body p-0">
+                <div class="table-responsive--md table-responsive">
+                    <table class="table--light table">
+                        <thead>
+                            <tr>
+                                <th>@lang('S.N.')</th>
+                                <th style="text-align:left;">@lang('Course Name')</th>
+                                <th>@lang('Course Type')</th>
+                                <!--<th>@lang('Short Decsription')</th>
+                                <th>@lang('Full Description')</th>-->
+                                <th>@lang('Price')</th>
+                                <th>@lang('Image')</th>
+                                <!-- <th>@lang('Status')</th> -->
+                                <th>@lang('Action')</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @php
+                            $i=1
+                            @endphp
+                            @forelse($data as $item)
+                            <tr>
+                                <td data-label="@lang('S.N.')">{{ $i++ }}
+                                </td>
+                                <td style="text-align:left;" data-label="@lang('Course Name')">
+                                    {{ __($item->course_name) }}
+                                </td>
+                                <td data-label="@lang('Name')">
+                                    <span class="fw-bold">{{ __($item->course_type) }}</span>
+                                </td>
+                                <!--<td data-label="@lang('Email')">
+                                    {{ __($item->short_decsription) }}
+                                </td>
+                                <td data-label="@lang('Mobile Number')">
+                                    <div id="log_{{ $item->id }}" class="desc" data-id="{{ $item->id }}">
+                                        {{ $item->full_description }}</div>
+                                    <div id="divMain_{{ $item->id }}"></div>
+                                </td>-->
+                                <td data-label="@lang('Address')">
+                                    {{ __($item->price) }}
+                                </td>
+
+                                <td data-label="@lang('image')">
+                                    <img style="height: 100px;width:200px;" class="img-fluid"
+                                        src="../assets/images/{{ __($item->image) }}">
+
+                                </td>
+
+                                <!-- <td data-label="@lang('Status')">
+                                            @if ($item->status == 1)
+                                                <span class="badge badge--success">@lang('Active')</span>
+                                            @else
+                                                <span class="badge badge--danger">@lang('Disabled')</span>
+                                            @endif
+                                        </td> -->
+                                <td data-label="@lang('Action')">
+                                    <button type="button" class="btn btn-sm btn-outline--primary cuModalBtn"
+                                        data-resource="{{ $item }}" data-modal_title="@lang('Update Course')"
+                                        data-edit="1" data-has_status="1">
+                                        <i class="la la-pencil"></i>@lang('Edit')
+                                    </button>
+                                    <button class="btn btn-sm btn-outline--danger confirmationBtn"
+                                        data-action="{{ route('admin.course.remove',$item->id) }}"
+                                        data-question="@lang('Are you sure to remove this item?')"><i
+                                            class="la la-trash"></i> @lang('Remove')</button>
+
+
+                                </td>
+                            </tr>
+                            @empty
+                            <tr>
+                                <td class="text-muted text-center" colspan="100%">{{ $emptyMessage }}</td>
+                            </tr>
+                            @endforelse
+
+                        </tbody>
+                    </table><!-- table end -->
+                </div>
+            </div>
+            <div class="card-footer py-4">
+            </div>
+        </div><!-- card end -->
+    </div>
+</div>
+
+{{-- Add METHOD MODAL --}}
+<div id="cuModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="las la-times"></i>
+                </button>
+            </div>
+            <form action="{{ route('admin.course.store') }}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label> @lang('Course Name')</label>
+                        <input type="text" class="form-control" id="course_name" name="course_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label> @lang('Course Type')</label>
+                        <input type="text" class="form-control" id="course_type" name="course_type" required>
+                    </div>
+                    <div class="form-group">
+                        <label> @lang('Short Decsription')</label>
+                        <textarea type="text" class="form-control" id="short_decsription" name="short_decsription"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label> @lang('Full Description')</label>
+                        <textarea rows="8" class="form-control border-radius-5 nicEdit"
+                            name="full_description">{{ old('full_description') }}</textarea>
+                        {{-- <textarea class="nicEdit form-control" name="full_description" id="full_description" vlaue="{{($item->full_description)}}"
+                        required></textarea> --}}
+                        <!-- <textarea type="text" class="form-control" id="full_description" name="full_description" required></textarea> -->
+                    </div>
+                    <div class="form-group">
+                        <label> @lang('Price')</label>
+                        <input type="text" class="form-control" id="price" name="price" required>
+                    </div>
+                    <div class="form-group">
+                        <label> @lang('Image')</label>
+                        <input type="file" class="form-control" id="image" name="image" value="{{ old('image') }}" >
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn--primary w-100 h-45">@lang('Submit')</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<x-confirmation-modal></x-confirmation-modal>
+
+
+
+@push('breadcrumb-plugins')
+<div class="d-flex justify-content-end flex-wrap gap-2">
+    <form action="" method="GET" class="form-inline">
+        <div class="input-group justify-content-end">
+            <input type="text" name="search" class="form-control bg--white" placeholder="@lang('Username / Name')"
+                value="{{ request()->search }}">
+            <button class="btn btn--primary input-group-text" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </form>
+
+    <button type="button" class="btn btn-sm btn-outline--primary cuModalBtn"
+        data-modal_title="@lang('Add New Receptionist')">
+        <i class="las la-plus"></i>@lang('Add New')
+    </button>
+</div>
+@endpush
+
+
+
+@endsection
